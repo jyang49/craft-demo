@@ -1,7 +1,11 @@
 import json
 from random import *
+import sys
 
-for num in range(10090, 10100):
+start = int(sys.argv[1])
+end = int(sys.argv[2])
+
+for num in range(start, end):
     prefix = randint(1000, 9999)
     id = str(prefix) + '-' + str(num)
 
